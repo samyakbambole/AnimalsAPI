@@ -9,6 +9,10 @@ animals.forEach(animal => {
      }); 
 }); 
 
+router.get('/docs', (req,res) => {
+     res.render('frontend-docs'); 
+}); 
+
 router.get('/:id', (req,res) => {
      const id = req.params.id; 
      res.render('individual', {animal: animals[id]}); 

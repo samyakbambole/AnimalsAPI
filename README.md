@@ -30,6 +30,10 @@ An Individual Frontend Route for every Animal.
 
 ## API Routes
 
+#### `/api/docs`
+
+Documentation for the API. 
+
 #### `/api/animals`
 
 Returns the Information about the Animals in JSON Format.

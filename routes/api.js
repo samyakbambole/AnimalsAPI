@@ -17,4 +17,8 @@ animals.forEach(animal => {
      }); 
 }); 
 
+router.get('/docs', (req,res) => {
+     res.render('api-docs'); 
+}); 
+
 module.exports = router;
