@@ -14,19 +14,21 @@ Starts The Server on - http://localhost:5000/
 Starts the Development Server
 Starts the Server on - http://localhost:5000/
 
-## Routes
+## Frontend Routes
 
 #### `/` 
 
 Frontend HTML page for viewing all the information of the animals as cards. 
 
-#### `/animals`
+## API Routes
 
-Gives All the Information of Animals in the JSON Format. Could be used as an API. 
+#### `/api/animals`
 
-#### `/animals/:id`
+Returns the Information about the Animals in JSON Format.
 
-Gives The Information of a particular Animal according to their `id`. 
+#### `/api/animals/:id`
+
+Returns the Information about a particular Animal According to its `id`.
 
 ## Tools & Utilities Used
 

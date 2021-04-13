@@ -17,18 +17,13 @@ app.use(express.json());
 
 app.set('view engine', 'ejs'); 
 
+const apiRouter = require('./routes/api'); 
+app.use('/api', apiRouter); 
+
 // Routes
 app.get('/', (req,res) => {
      res.render('index', { animals: animals }); 
 }); 
-
-app.get('/animals', (req,res) => {
-     res.json(animals); 
-}); 
-
-app.get('/animals/:id', (req,res) => {
-     res.json(animals[req.params.id]); 
-});
 
 const port = process.env.PORT; 
 app.listen(port, () => {
