@@ -20,6 +20,10 @@ Starts the Server on - http://localhost:5000/
 
 Frontend HTML page for viewing all the information of the animals as cards. 
 
+#### `/:nameOfAnimal`
+
+An Individual Frontend Route for every Animal. 
+
 ## API Routes
 
 #### `/api/animals`
@@ -28,7 +32,11 @@ Returns the Information about the Animals in JSON Format.
 
 #### `/api/animals/:id`
 
-Returns the Information about a particular Animal According to its `id`.
+Returns the Information about a particular Animal According to its `id` in JSON.
+
+#### `/api/:nameOfAnimal`
+
+Returns the Information about a particular Animal According to its `name` in JSON.
 
 ## Tools & Utilities Used
 

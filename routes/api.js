@@ -11,4 +11,10 @@ router.get('/animals/:id', (req,res) => {
      res.json(animals[req.params.id]); 
 });
 
+animals.forEach(animal => {
+     router.get(`/${animal.name}`, (req,res) => {
+          res.json(animal); 
+     }); 
+}); 
+
 module.exports = router

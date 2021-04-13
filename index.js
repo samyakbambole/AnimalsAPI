@@ -26,6 +26,12 @@ app.get('/', (req,res) => {
      res.render('index', { animals: animals }); 
 }); 
 
+animals.forEach(animal => {
+     app.get(`/${animal.name}`, (req,res) => {
+          res.render('individual', {animal: animal}); 
+     }); 
+}); 
+
 app.get('*', (req,res) => {
      pageNotFound(req,res); 
 }); 
