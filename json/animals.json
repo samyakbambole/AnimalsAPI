@@ -3,28 +3,35 @@
           "id": 0, 
           "name": "Tiger", 
           "habitat": "Forest", 
-          "description": "Tiger Description",
+          "description": "The tiger is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar. ",
           "wikipedia": "https://en.wikipedia.org/wiki/Tiger"
      }, 
      {
           "id": 1, 
           "name": "Elephant", 
           "habitat": "Forest", 
-          "description": "Elephant Description", 
+          "description": "Elephants are the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons. ", 
           "wikipedia": "https://en.wikipedia.org/wiki/Elephant"
      }, 
      {
           "id": 2, 
           "name": "Lion", 
           "habitat": "Grasslands, Savannas",
-          "description": "Lion Description", 
+          "description": "The lion is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.", 
           "wikipedia": "https://en.wikipedia.org/wiki/Lion"
      }, 
      {
           "id": 3, 
           "name": "Pig", 
           "habitat": "Grasslands", 
-          "description": "Pig Description", 
+          "description": "A pig is any of the animals in the genus Sus, within the even-toed ungulate family Suidae. Pigs include domestic pigs and their ancestor, the common Eurasian wild boar, along with other species. Pigs, like all suids, are native to the Eurasian and African continents, ranging from Europe to the Pacific islands.", 
           "wikipedia": "https://en.wikipedia.org/wiki/Pig"
+     }, 
+     {
+          "id": 4, 
+          "name": "Porcupine", 
+          "habitat": "Grasslands, Desert", 
+          "description": "Porcupine are large rodents with coats of sharp spines, or quills, that protect them against predation. The term covers two families of animals: the Old World porcupines of family Hystricidae, and the New World porcupines of family Erethizontidae.", 
+          "wikipedia": "https://en.wikipedia.org/wiki/Porcupine"
      }
 ]
