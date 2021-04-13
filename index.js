@@ -28,7 +28,7 @@ app.get('/animals', (req,res) => {
 
 app.get('/animals/:id', (req,res) => {
      res.json(animals[req.params.id]); 
-}); 
+});
 
 const port = process.env.PORT; 
 app.listen(port, () => {
