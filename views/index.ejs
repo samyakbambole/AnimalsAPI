@@ -10,10 +10,10 @@
 
 <body>
      <div class="container" id="app">
-          <h1>AnimalsAPI</h1>
+          <h1 class="mb-5">AnimalsAPI | An API For Getting all Animals' Information!</h1>
 
           <% animals.forEach(animal => { %>
-          <div class="card" style="width: 50rem;">
+          <div class="card mt-2 mb-2" style="display: flexbox;">
                <div class="card-body">
                     <h5 class="card-title"><%= animal.name %></h5>
                     <h6 class="card-title">Habitat - <%= animal.habitat %></h6>
@@ -22,12 +22,15 @@
                </div>
           </div>
           <% }) %>
-
-          <p>
-               This project is licensed under the MIT License
-               <br>
-               <a href="https://github.com/samyakbambole">© samyakbambole</a>
-          </p>
+          <div id="credits" class="mt-5 mb-5">
+               <p>
+                    <a href="https://github.com/samyakbambole/AnimalsAPI">GitHub Repository</a>
+                    <br>
+                    This project is licensed under the MIT License
+                    <br>
+                    <a href="https://github.com/samyakbambole">©samyakbambole</a>
+               </p>
+          </div>
      </div>
 </body>
 
