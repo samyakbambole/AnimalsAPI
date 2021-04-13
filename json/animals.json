@@ -1,0 +1,30 @@
+[
+     {
+          "id": 0, 
+          "name": "Tiger", 
+          "habitat": "Forest", 
+          "description": "Tiger Description",
+          "wikipedia": "https://en.wikipedia.org/wiki/Tiger"
+     }, 
+     {
+          "id": 1, 
+          "name": "Elephant", 
+          "habitat": "Forest", 
+          "description": "Elephant Description", 
+          "wikipedia": "https://en.wikipedia.org/wiki/Elephant"
+     }, 
+     {
+          "id": 2, 
+          "name": "Lion", 
+          "habitat": "Grasslands, Savannas",
+          "description": "Lion Description", 
+          "wikipedia": "https://en.wikipedia.org/wiki/Lion"
+     }, 
+     {
+          "id": 3, 
+          "name": "Pig", 
+          "habitat": "Grasslands", 
+          "description": "Pig Description", 
+          "wikipedia": "https://en.wikipedia.org/wiki/Pig"
+     }
+]
