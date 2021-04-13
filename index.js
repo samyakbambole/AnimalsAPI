@@ -6,6 +6,7 @@ const express = require('express');
 const morgan = require('morgan'); 
 const helmet = require('helmet'); 
 const cors = require('cors'); 
+const pageNotFound = require('./routes/404'); 
 
 const app = express(); 
 
@@ -23,6 +24,10 @@ app.use('/api', apiRouter);
 // Routes
 app.get('/', (req,res) => {
      res.render('index', { animals: animals }); 
+}); 
+
+app.get('*', (req,res) => {
+     pageNotFound(req,res); 
 }); 
 
 const port = process.env.PORT; 
