@@ -20,6 +20,10 @@ Starts the Server on - http://localhost:5000/
 
 Frontend HTML page for viewing all the information of the animals as cards. 
 
+#### `/:id`
+
+Returns the Information about a particular Animal According to its `id`.
+
 #### `/:nameOfAnimal`
 
 An Individual Frontend Route for every Animal. 

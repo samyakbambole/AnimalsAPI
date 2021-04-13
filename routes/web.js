@@ -9,4 +9,9 @@ animals.forEach(animal => {
      }); 
 }); 
 
+router.get('/:id', (req,res) => {
+     const id = req.params.id; 
+     res.render('individual', {animal: animals[id]}); 
+}); 
+
 module.exports = router;
