@@ -42,7 +42,7 @@ Returns the Information about the Animals in JSON Format.
 
 Returns the Information about a particular Animal According to its `id` in JSON.
 
-#### `/api/:nameOfAnimal`
+#### `/api/animals/:nameOfAnimal`
 
 Returns the Information about a particular Animal According to its `name` in JSON.
 

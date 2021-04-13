@@ -7,12 +7,8 @@ router.get('/animals', (req,res) => {
      res.json(animals); 
 }); 
 
-router.get('/animals/:id', (req,res) => {
-     res.json(animals[req.params.id]); 
-});
-
 animals.forEach(animal => {
-     router.get(`/${animal.name}`, (req,res) => {
+     router.get(`/animals/${animal.name}`, (req,res) => {
           res.json(animal); 
      }); 
 }); 
@@ -20,5 +16,9 @@ animals.forEach(animal => {
 router.get('/docs', (req,res) => {
      res.render('api-docs'); 
 }); 
+
+router.get('/animals/:id', (req,res) => {
+     res.json(animals[req.params.id]); 
+});
 
 module.exports = router;
