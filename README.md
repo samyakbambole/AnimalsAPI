@@ -28,6 +28,10 @@ Returns the Information about a particular Animal According to its `id`.
 
 An Individual Frontend Route for every Animal. 
 
+#### `/animals/list`
+
+Get The list of all animals available. 
+
 ## API Routes
 
 #### `/api/docs`

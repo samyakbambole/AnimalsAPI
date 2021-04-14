@@ -11,7 +11,6 @@ router.get('/animals', (req,res) => {
      res.json(animals); 
 }); 
 
-
 animals.forEach(animal => {
      router.get(`/animals/${animal.name}`, (req,res) => {
           res.json(animal); 

@@ -3,6 +3,14 @@ const router = express.Router();
 const animals = require('../json/animals.json');
 
 // Routes
+router.get('/animals', (req,res) => {
+     res.redirect('/'); 
+}); 
+
+router.get('/animals/list', (req,res) => {
+     res.render('list', { animals: animals }); 
+}); 
+
 animals.forEach(animal => {
      router.get(`/animals/${animal.name}`, (req, res) => {
           res.render('individual', { animal: animal });

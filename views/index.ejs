@@ -36,6 +36,9 @@
                          <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="/api/docs">API Docs</a>
                          </li>
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/animals/list">Animals List</a>
+                         </li>
                     </ul>
                </div>
           </div>
@@ -51,6 +54,7 @@
                     <h6 class="card-title">Habitat - <%= animal.habitat %></h6>
                     <h6 class="card-title">Species - <%= animal.species %></h6>
                     <p class="card-text"><%= animal.description %></p>
+                    <a href="animals/<%= animal.name %>" class="btn btn-primary"><%= animal.name %> Page</a>
                     <a href="<%= animal.wikipedia %>" class="btn btn-primary" target="blank_"><%= animal.name %>
                          Wikipedia</a>
                </div>

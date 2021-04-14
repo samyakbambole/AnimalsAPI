@@ -28,10 +28,6 @@ app.get('/', (req,res) => {
      res.render('index', { animals: animals }); 
 }); 
 
-// app.get('*', (req,res) => {
-//      pageNotFound(req,res); 
-// }); 
-
 const port = process.env.PORT; 
 app.listen(port, () => {
      console.log(`Express API Running on port ${port}`); 
