@@ -1,6 +1,6 @@
-const express = require('express'); 
+import express from 'express'; 
 const router = express.Router(); 
-const animals = require('../json/animals.json'); 
+import animals from '../json/animals.js'
 
 // Routes
 router.get('/', (req,res) => {
@@ -25,4 +25,4 @@ router.get('/animals/:id', (req,res) => {
      res.json(animals[req.params.id]); 
 });
 
-module.exports = router;
+export default router; 

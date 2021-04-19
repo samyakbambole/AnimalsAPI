@@ -1,34 +1,34 @@
-require('dotenv').config(); 
+import dotenv from 'dotenv'; 
+dotenv.config(); 
 
-const animals = require('./json/animals.json'); 
+import animals from './json/animals.js'
 
-const express = require('express'); 
-const morgan = require('morgan'); 
-const helmet = require('helmet'); 
-const cors = require('cors'); 
-const pageNotFound = require('./routes/404'); 
+import express from 'express'; 
+import morgan from 'morgan'; 
+import helmet from 'helmet'; 
+import cors from 'cors'; 
 
-const app = express(); 
+const app = express();
 
 // Middlewares
-app.use(morgan('dev')); 
-app.use(helmet()); 
-app.use(cors()); 
-app.use(express.json()); 
+app.use(morgan('dev'));
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
 
-app.set('view engine', 'ejs'); 
+app.set('view engine', 'ejs');
 
-const apiRouter = require('./routes/api'); 
-const webRouter = require('./routes/web'); 
-app.use('/api', apiRouter); 
-app.use('/', webRouter); 
+import apiRouter from './routes/api.js'
+import webRouter from './routes/web.js'
+app.use('/api', apiRouter);
+app.use('/', webRouter);
 
 // Routes
-app.get('/', (req,res) => {
-     res.render('index', { animals: animals }); 
-}); 
+app.get('/', (req, res) => {
+     res.render('index', { animals: animals });
+});
 
-const port = process.env.PORT; 
+const port = process.env.PORT;
 app.listen(port, () => {
-     console.log(`Express API Running on port ${port}`); 
+     console.log(`Express API Running on port ${port}`);
 }); 
