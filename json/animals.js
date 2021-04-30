@@ -150,6 +150,14 @@ const animals = [
           species: "Mammal",
           description: "Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout the Northern Hemisphere and partially in the Southern Hemisphere. ",
           wikipedia: "https://en.wikipedia.org/wiki/Bear"
+     }, 
+     {
+          id: 19, 
+          name: "Wolf", 
+          habitat: "Tundra, Woodlands, Forests, Grasslands, Deserts", 
+          species: "Mammal", 
+          description: "The wolf, also known as the gray wolf or grey wolf, is a large canine native to Eurasia and North America. More than thirty subspecies of Canis lupus have been recognized, and gray wolves, as colloquially understood, comprise non-domestic/feral subspecies.", 
+          wikipedia: "https://en.wikipedia.org/wiki/Wolf"
      }
 ]
 
