@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'; 
 dotenv.config(); 
 
-import animals from './json/animals.js'
+import animals from './json/animals.js';
 
 import express from 'express'; 
 import morgan from 'morgan'; 
@@ -18,10 +18,14 @@ app.use(express.json());
 
 app.set('view engine', 'ejs');
 
-import apiRouter from './routes/api.js'
-import webRouter from './routes/web.js'
+import apiRouter from './routes/api.js';
+import webRouter from './routes/web.js';
+import redirectRouter from './routes/redirect/redirect.js';
+import contributorsRouter from './routes/contributors.js'; 
 app.use('/api', apiRouter);
 app.use('/', webRouter);
+app.use('/', redirectRouter); 
+app.use('/contributors', contributorsRouter); 
 
 // Routes
 app.get('/', (req, res) => {
