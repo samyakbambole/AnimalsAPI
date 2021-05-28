@@ -21,11 +21,9 @@ app.set('view engine', 'ejs');
 import apiRouter from './routes/api.js';
 import webRouter from './routes/web.js';
 import redirectRouter from './routes/redirect/redirect.js';
-import contributorsRouter from './routes/contributors.js'; 
 app.use('/api', apiRouter);
 app.use('/', webRouter);
 app.use('/', redirectRouter); 
-app.use('/contributors', contributorsRouter); 
 
 // Routes
 app.get('/', (req, res) => {
