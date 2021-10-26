@@ -1,0 +1,44 @@
+.front {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 47, 78, 0.726);
+  position: fixed;
+  top: 0;
+}
+
+.centerscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid powderblue;
+  z-index: 300;
+}
+
+.leftalign
+{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.expanding {
+  animation: grow 900ms ease-in-out;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
